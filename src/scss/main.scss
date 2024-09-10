@@ -1,0 +1,53 @@
+@import './fonts.scss';
+
+:root {
+  --bg: rgb(12, 12, 29);
+  --text: rgb(0, 224, 168);
+}
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 18px;
+  }
+  body::-webkit-scrollbar-track {
+    background: rgba(9, 114, 82, 0.144);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 221, 184);
+    border-radius: 30px;
+  }
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(2, 194, 152);
+    transition: .5s;
+    border-radius: 30px;
+  }
+
+  .wrapper {
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    transition: .5s;
+}
+
+.wrapper.light {
+    --bg: rgb(120, 190, 173);
+    --text: rgb(0, 128, 117);
+    --descr: rgb(35, 131, 86);
+    --shadow: rgb(67, 175, 124);
+}
