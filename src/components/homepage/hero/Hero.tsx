@@ -20,7 +20,7 @@ const Hero = () => {
           </div>
 
           <div className="relative w-[180px] h-[180px] flex items-center justify-center">
-            <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle,_rgba(255,66,148,1)_0%,_rgba(77,160,255,1)_100%)] blur-2xl scale-125 z-0" />
+            <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle,_rgba(255,66,148,1)_0%,_rgba(77,160,255,1)_100%)] blur-2xl scale-125 -z-10" />
             <Image
               src="/images/hero.jpg"
               alt="hero"
@@ -31,7 +31,7 @@ const Hero = () => {
           </div>
           </div>
           <div className="flex flex-col justify-end h-auto relative">
-            <p className='text-[25px]'>A Developer who</p>
+            <p className='text-[25px]'>A Developer who ⬎</p>
             <h2 className='text-[60px] max-w-[390px] leading-[110%]'>Judges websites by their <span className='text-[#7700ff]'>loading time</span></h2>
             <Image 
               src="/icons/ellipse.png" 
