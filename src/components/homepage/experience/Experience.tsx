@@ -1,6 +1,7 @@
 import Container from '@/components/common/Container'
 import React from 'react'
 import { experience } from '@/data/experience.data'
+import Image from 'next/image'
 
 const Experience = () => {
   return (
@@ -13,7 +14,9 @@ const Experience = () => {
                     {experience.map((el, id) => {
                         return (
                         <div key={id} className="w-[500px] mt-5 h-80 bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
-                            <div className="w-full h-40 bg-sky-300 rounded-2xl"></div>
+                            <div className="w-full h-40 bg-sky-300 rounded-2xl">
+                                <Image src={el.img} alt='logo' width={8000} height={8000} className='w-full h-40 object-cover' quality={100}/>
+                            </div>
                             <div className="">
                                 <p className="text-[30px] font-extrabold">{el.title}</p>
                                 <p className="text-[20px]">{el.descr}</p>

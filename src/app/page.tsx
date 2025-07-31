@@ -2,6 +2,7 @@ import Header from "@/components/common/Header";
 import About from "@/components/homepage/about/About";
 import Experience from "@/components/homepage/experience/Experience";
 import Hero from "@/components/homepage/hero/Hero";
+import Skills from "@/components/homepage/skillset/Skills";
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero/>
       <About/>
       <Experience/>
+      <Skills/>
     </div>
   );
 }
