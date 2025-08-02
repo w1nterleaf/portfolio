@@ -2,6 +2,7 @@ import Header from "@/components/common/Header";
 import About from "@/components/homepage/about/About";
 import Experience from "@/components/homepage/experience/Experience";
 import Hero from "@/components/homepage/hero/Hero";
+import Portfolio from "@/components/homepage/portfolio/Portfolio";
 import Skills from "@/components/homepage/skillset/Skills";
 
 
@@ -13,6 +14,7 @@ export default function Home() {
       <About/>
       <Experience/>
       <Skills/>
+      <Portfolio/>
     </div>
   );
 }

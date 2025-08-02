@@ -18,7 +18,38 @@
   --background: #0f0f0f;
   --foreground: #ffffff;
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
 
+::-webkit-scrollbar-track {
+  background: #c3c3c3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7700ff;
+  border-radius: 30px;
+}
+
+   html {
+      scroll-behavior: smooth;
+   }
+ html.lenis,
+   html.lenis body {
+      height: auto;
+   }
+   .lenis.lenis-smooth {
+      scroll-behavior: auto !important;
+   }
+   .lenis.lenis-smooth [data-lenis-prevent] {
+      overscroll-behavior: contain;
+   }
+   .lenis.lenis-stopped {
+      overflow: hidden;
+   }
+   .lenis.lenis-smooth iframe {
+      pointer-events: none;
+   }
 @keyframes typewriter {
   from {
     width: 0;
