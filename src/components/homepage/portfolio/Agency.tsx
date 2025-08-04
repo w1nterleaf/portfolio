@@ -1,7 +1,7 @@
 'use client'
 import Container from '@/components/common/Container'
 import React from 'react'
-import { gallasia } from '@/data/portfolio.data'
+import { agency } from '@/data/portfolio.data'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Image from 'next/image'
 import 'swiper/css'
@@ -19,10 +19,8 @@ const Agency = () => {
 
                     <div className="mt-5 backdrop-blur-md bg-white/10 border border-white/10 rounded-[20px] p-4 z-12">
                         <p className='z-12 text-[20px]'>
-                            A web app for visualizing personalized Spotify data. View your
-                            top artists, top tracks, recently played tracks, and detailed audio
-                            information about each track. Create and save new playlists of
-                            recommended tracks based on your existing playlists and more.
+                            A multilingual website for an international PR and marketing agency. 
+                            Features include service descriptions, case studies, and dynamic contact forms, all tailored to reflect the brand’s upscale and modern aesthetic.
                         </p>
                     </div>
                 </div>
@@ -36,9 +34,9 @@ const Agency = () => {
                 speed={1000}
                 className="w-full max-w-md"
                 >
-                {gallasia.map((el) => (
+                {agency.map((el) => (
                     <SwiperSlide key={el.id} className="flex justify-center">
-                    <div className="w-[400px] h-80 relative">
+                    <div className="w-[450px] h-80 relative">
                         <Image
                         src={el.img}
                         alt="gallasia"

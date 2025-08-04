@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Experience = () => {
   return (
-    <main>
+    <main id='experience'>
         <Container>
             <div className="relative mt-40">
                 <div className="absolute inset-0 max-w-[400px] max-h-[400px] left-[40%] rounded-full bg-[radial-gradient(circle,_rgba(255,66,148,1)_0%,_rgba(77,160,255,1)_100%)] blur-2xl scale-125 -z-10" />

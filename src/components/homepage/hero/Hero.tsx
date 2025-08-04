@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <main>
         <Container>
-          <div className="flex justify-evenly">
+          <div className="flex justify-evenly pt-25">
           <div className="">
           <div className="relative mt-10 w-max">
             <h2 className='text-[30px] mb-10'>Hello World! I am <span className='text-[#7700ff]'>Ruslana</span></h2>

@@ -15,14 +15,13 @@ const Gallasia = () => {
             <div className="absolute inset-0 max-w-[300px] max-h-[400px] left-[50%] rounded-full bg-[radial-gradient(circle,_rgba(255,66,148,1)_0%,_rgba(77,160,255,1)_100%)] blur-2xl scale-125 -z-10" />
             <div className="flex justify-around items-center">
                 <div className="w-[500px] ">
-                    <h3 className='text-[40px]'>Gallasia</h3>
+                    <h3 className='text-[40px]'>Galassia</h3>
 
                     <div className="mt-5 backdrop-blur-md bg-white/10 border border-white/10 rounded-[20px] p-4 z-12">
                         <p className='z-12 text-[20px]'>
-                            A web app for visualizing personalized Spotify data. View your
-                            top artists, top tracks, recently played tracks, and detailed audio
-                            information about each track. Create and save new playlists of
-                            recommended tracks based on your existing playlists and more.
+                          Galassia.uz — a corporate website for a local dietary supplements and vitamins manufacturer.
+                          Focused on clean design and user-friendly navigation, 
+                          the site features a product catalog, brand information, and a contact form.
                         </p>
                     </div>
                 </div>
@@ -38,7 +37,7 @@ const Gallasia = () => {
                 >
                 {gallasia.map((el) => (
                     <SwiperSlide key={el.id} className="flex justify-center">
-                    <div className="w-[400px] h-80 relative">
+                    <div className="w-[450px] h-80 relative">
                         <Image
                         src={el.img}
                         alt="gallasia"

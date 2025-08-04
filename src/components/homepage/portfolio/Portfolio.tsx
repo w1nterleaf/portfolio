@@ -5,7 +5,7 @@ import Agency from './Agency'
 
 const Portfolio = () => {
   return (
-    <main>
+    <main id='projects'>
         <Gallasia/>
         <Ledart/>
         <Agency/>

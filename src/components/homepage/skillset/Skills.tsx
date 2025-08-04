@@ -4,7 +4,7 @@ import React from 'react'
 
 const Skills = () => {
   return (
-    <main>
+    <main id='skills'>
         <Container>
             <div className="mt-20">
                 <h2 className='text-[40px] flex justify-end gap-2'>But what about <span className='text-[#7700ff]'> skills</span>?</h2>
