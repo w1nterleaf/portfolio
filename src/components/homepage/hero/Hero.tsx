@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <main>
         <Container>
-          <div className="flex justify-evenly pt-25">
+          <div className="flex-col flex items-center pt-25 md:flex-row md:justify-evenly">
           <div className="">
           <div className="relative mt-10 w-max">
             <h2 className='text-[30px] mb-10'>Hello World! I am <span className='text-[#7700ff]'>Ruslana</span></h2>
@@ -38,7 +38,7 @@ const Hero = () => {
               width={290} 
               height={240}
               alt='arrow' 
-              className='absolute bottom-6 right-0 z-10'
+              className='absolute hidden bottom-6 right-0 z-10 sm:flex '
             />
             <p className='text-[20px] mt-3'>Because if it lags — I’m closing that tab.</p>
 

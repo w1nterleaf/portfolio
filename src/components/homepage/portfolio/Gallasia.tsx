@@ -11,47 +11,53 @@ const Gallasia = () => {
   return (
     <main>
       <Container>
-        <div className="mt-50 relative ">
-            <div className="absolute inset-0 max-w-[300px] max-h-[400px] left-[50%] rounded-full bg-[radial-gradient(circle,_rgba(255,66,148,1)_0%,_rgba(77,160,255,1)_100%)] blur-2xl scale-125 -z-10" />
-            <div className="flex justify-around items-center">
-                <div className="w-[500px] ">
-                    <h3 className='text-[40px]'>Galassia</h3>
+        <div className="mt-50 relative">
+          {/* Фон */}
+          <div className="absolute inset-0 max-w-[300px] max-h-[400px] left-1/2 rounded-full bg-[radial-gradient(circle,_rgba(255,66,148,1)_0%,_rgba(77,160,255,1)_100%)] blur-2xl scale-125 -z-10" />
 
-                    <div className="mt-5 backdrop-blur-md bg-white/10 border border-white/10 rounded-[20px] p-4 z-12">
-                        <p className='z-12 text-[20px]'>
-                          Galassia.uz — a corporate website for a local dietary supplements and vitamins manufacturer.
-                          Focused on clean design and user-friendly navigation, 
-                          the site features a product catalog, brand information, and a contact form.
-                        </p>
-                    </div>
-                </div>
-                <div className="">
-                <Swiper
+          {/* Контент */}
+          <div className="flex flex-col md:flex-row md:items-center md:justify-around gap-8">
+            
+            {/* Текст */}
+            <div className="w-full max-w-[500px] order-1 md:order-0 text-center md:text-left">
+              <h3 className="text-3xl sm:text-[40px]">Galassia</h3>
+              <div className="mt-5 backdrop-blur-md bg-white/10 border border-white/10 rounded-[20px] p-4">
+                <p className="text-lg sm:text-[20px]">
+                  Galassia.uz — a corporate website for a local dietary supplements and vitamins manufacturer.
+                  Focused on clean design and user-friendly navigation, 
+                  the site features a product catalog, brand information, and a contact form.
+                </p>
+              </div>
+            </div>
+
+            {/* Свайпер */}
+            <div className="w-full max-w-[450px]">
+              <Swiper
                 modules={[Autoplay]}
                 slidesPerView={1}
                 spaceBetween={20}
                 autoplay
                 loop
                 speed={1000}
-                className="w-full max-w-md"
-                >
+                className="w-full"
+              >
                 {gallasia.map((el) => (
-                    <SwiperSlide key={el.id} className="flex justify-center">
-                    <div className="w-[450px] h-80 relative">
-                        <Image
+                  <SwiperSlide key={el.id} className="flex justify-center">
+                    <div className="w-full h-64 sm:h-80 relative">
+                      <Image
                         src={el.img}
                         alt="gallasia"
                         fill
                         className="object-cover rounded-lg"
-                        />
+                      />
                     </div>
-                    </SwiperSlide>
+                  </SwiperSlide>
                 ))}
-                </Swiper>
-                </div>
+              </Swiper>
             </div>
+
+          </div>
         </div>
-        
       </Container>
     </main>
   )

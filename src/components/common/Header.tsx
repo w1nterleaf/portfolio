@@ -14,7 +14,7 @@ const Header = () => {
                     <p className='-ml-3 text-[#3eccef]'>interleaf</p>
                     </Link>
                 </div>
-                <div className="flex gap-5">
+                <div className="hidden gap-5 md:flex">
                     <ul className='flex gap-5'>
                         {navigation.map((el, id) => {
                             return (
