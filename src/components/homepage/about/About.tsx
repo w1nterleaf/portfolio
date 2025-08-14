@@ -40,11 +40,11 @@ const About = () => {
       <Container>
         <div className="mt-25 flex  flex-col items-center">
           <div className="h-[40px]">
-          <h3 className="text-[40px] text-[#7700ff] border-r-2 pr-2 whitespace-nowrap overflow-hidden w-fit ">
+          <h3 className="text-[30px] sm:text-[40px] text-[#7700ff] border-r-2 pr-2 whitespace-nowrap overflow-hidden w-fit ">
             {text} 
           </h3>
           </div>
-          <div className="mt-5 text-[30px] max-w-[700px]">
+          <div className="mt-5 text-[25px] sm:text-[30px] max-w-[700px]">
             <p>
                 A frontend dev who blends logic with aesthetics.
                 I design and build digital experiences
