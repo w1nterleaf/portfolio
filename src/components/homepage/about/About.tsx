@@ -45,7 +45,7 @@ const About = () => {
           </h3>
           </div>
           <div className="mt-5 text-[25px] sm:text-[30px] max-w-[700px]">
-            <p>
+            <p className='text-center'>
                 A frontend dev who blends logic with aesthetics.
                 I design and build digital experiences
                 that hit that one spot between user delight and business goals.

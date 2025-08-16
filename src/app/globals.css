@@ -18,6 +18,10 @@
   --background: #0f0f0f;
   --foreground: #ffffff;
 }
+body {
+  overflow-x: hidden;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }

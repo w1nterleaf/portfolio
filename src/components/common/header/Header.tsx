@@ -8,14 +8,14 @@ const Header = () => {
   return (
     <header className='fixed z-20 w-full font-roboto bg-[#0a0a0a] p-5 '>
         <Container>
-            <div className="flex justify-between items-center ">
+            <div className="flex justify-between items-center w-full">
                 <div className="">
                     <Link href={'/'} className='flex items-center'>
                     <Image src='/icons/logo.png' width={50} height={60} alt='logo'/>
                     <p className='-ml-3 text-[#3eccef]'>interleaf</p>
                     </Link>
                 </div>
-                <div className="hidden gap-5 md:flex">
+                <div className="hidden md:flex">
                     <ul className='flex gap-5'>
                         {navigation.map((el, id) => {
                             return (

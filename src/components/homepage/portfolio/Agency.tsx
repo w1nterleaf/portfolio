@@ -14,7 +14,19 @@ const Agency = () => {
       <Container>
         <div className="mt-50 relative">
 
-          <div className="absolute inset-0 max-w-[300px] max-h-[400px]  left-[30%] md:left-1/2 rounded-full bg-[radial-gradient(circle,_rgba(255,66,148,1)_0%,_rgba(77,160,255,1)_100%)] blur-2xl scale-125 -z-10" />
+                   <div className="absolute inset-0 flex items-center justify-center left-0  md:left-[40%] -z-10 overflowx-hidden">
+                      <div
+                        className="
+                          w-[180px] h-[180px] 
+                          sm:w-[250px] sm:h-[250px] 
+                          md:w-[350px] md:h-[350px] 
+                          lg:w-[450px] lg:h-[450px]
+                          rounded-full 
+                          bg-[radial-gradient(circle,_rgba(255,66,148,0.6)_0%,_rgba(77,160,255,0.5)_100%)] 
+                          blur-3xl
+                        "
+                      />
+                    </div>
 
           <div className="flex flex-col items-center  md:flex-row md:items-center md:justify-around gap-8">
 

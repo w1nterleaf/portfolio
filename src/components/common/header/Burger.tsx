@@ -65,7 +65,7 @@ const Burger = () => {
                </motion.div>
             )}
          </AnimatePresence>
-         <button type='button' onClick={openModal} aria-label='menu' className='max-w-[47px] w-full h-[47px] p-[10px]'>
+         <button type='button' onClick={openModal} aria-label='menu' className='max-w-[47px] w-full h-[40px] p-[10px]'>
             <Image src={'/icons/burger-white.svg'} alt='burger' width={60} height={12} className='w-full h-full' />
          </button>
       </>

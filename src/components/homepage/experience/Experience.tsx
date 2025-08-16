@@ -8,7 +8,19 @@ const Experience = () => {
     <main id='experience'>
         <Container>
             <div className="relative mt-40 ">
-                <div className="absolute inset-0 max-w-[400px] max-h-[400px] md:left-[30%] rounded-full bg-[radial-gradient(circle,_rgba(255,66,148,1)_0%,_rgba(77,160,255,1)_100%)] blur-2xl scale-125 -z-10" />
+                   <div className="absolute inset-0 flex items-center justify-center -z-10 overflowx-hidden">
+                      <div
+                        className="
+                          w-[180px] h-[180px] 
+                          sm:w-[250px] sm:h-[250px] 
+                          md:w-[350px] md:h-[350px] 
+                          lg:w-[450px] lg:h-[450px]
+                          rounded-full 
+                          bg-[radial-gradient(circle,_rgba(255,66,148,0.6)_0%,_rgba(77,160,255,0.5)_100%)] 
+                          blur-3xl
+                        "
+                      />
+                    </div>
                 <h3 className='text-[40px] z-10 flex justify-center'>Educational Courses and Work Experience</h3>
                 <div className=" flex flex-col items-center md:flex-row md:justify-around">
                     {experience.map((el, id) => {
