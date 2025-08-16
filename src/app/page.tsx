@@ -1,4 +1,4 @@
-import Header from "@/components/common/Header";
+import Header from "@/components/common/header/Header";
 import About from "@/components/homepage/about/About";
 import Contacts from "@/components/homepage/contacts/Contacts";
 import Experience from "@/components/homepage/experience/Experience";

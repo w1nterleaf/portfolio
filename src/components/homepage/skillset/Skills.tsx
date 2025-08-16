@@ -28,7 +28,7 @@ const Skills = () => {
       </div>
 
       <div className="relative flex justify-center -mt-12 sm:-mt-24">
-        <div className="absolute bottom-[20%] sm:bottom-[25%] w-[100px] sm:w-[150px] md:w-[200px] z-20">
+        <div className="absolute bottom-[20%] md:mr-[20px] sm:bottom-[25%] w-[100px] sm:w-[150px] md:w-[200px] md:bottom-[18%] lg:bottom-[20%] z-10">
           <Image
             src="/icons/logo.png"
             width={8000}

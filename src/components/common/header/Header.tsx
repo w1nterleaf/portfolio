@@ -1,8 +1,9 @@
 import React from 'react'
-import Container from './Container'
+import Container from '../Container'
 import { navigation } from '@/data/header.data'
 import Link from 'next/link'
 import Image from 'next/image'
+import Burger from './Burger'
 const Header = () => {
   return (
     <header className='fixed z-20 w-full font-roboto bg-[#0a0a0a] p-5 '>
@@ -24,7 +25,10 @@ const Header = () => {
                             )
                         })}
                     </ul>
-                    <p>RU</p>
+                    
+                </div>
+                <div className="flex md:hidden">
+                    <Burger />
                 </div>
             </div>
         </Container>
