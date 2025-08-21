@@ -1,0 +1,27 @@
+{
+    "Home": "Home",
+    "Experience": "Experience",
+    "Skills": "Skills",
+    "Projects": "Projects",
+    "Contacts": "Contacts",
+    "Hello":"Hello World! I am",
+    "name": "Ruslana",
+    "role": "A Developer who",
+    "judges": "Judges websites by their",
+    "speed": "loading time",
+    "closing": "Because if it lags — I’m closing that tab.",
+    "EduExp": "Educational Courses and Work Experience",
+    "ButSkills": "But what about ",
+    "skillspan": "skills ",
+    "SomeSkills": "Some tech I’m familiar with. My skill set always grows",
+    "Partner": "Interested in partnering with me?",
+    "Open": "Open for freelance work and creative collabs. Let’s bring your ideas to life — clean code, smooth UI, real results",
+    
+    "hero":{
+        "title": "I am a Frontend Developer",
+        "build": "I build interfaces...",
+        "convert": "...and turn designs into code",
+        "desc": "A frontend dev who blends logic with aesthetics. I design and build digital experiences that hit that one spot between user delight and business goals."
+    }
+
+}

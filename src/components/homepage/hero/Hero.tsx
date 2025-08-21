@@ -1,15 +1,21 @@
 import Container from '@/components/common/Container'
 import React from 'react'
 import Image from 'next/image'
+import initTranslations from '@/app/[lng]/i18n';
 
-const Hero = () => {
+interface Props {
+     lng: string;
+} 
+
+const Hero: React.FC<Props> = async ({ lng }) => {
+  const { t } = await initTranslations(lng, ["translation"]);
   return (
     <main>
         <Container>
           <div className="flex-col flex items-center pt-25 md:flex-row md:justify-evenly">
           <div className="">
           <div className="relative mt-10 w-max ">
-            <h2 className='text-[30px] mb-10'>Hello World! I am <span className='text-[#7700ff]'>Ruslana</span></h2>
+            <h2 className='text-[30px] mb-10'>{t("Hello")}<span className='text-[#7700ff] ml-2'>{t("name")}</span></h2>
             <Image 
             src="/icons/arrow.png" 
             width={120} 
@@ -31,8 +37,8 @@ const Hero = () => {
           </div>
           </div>
           <div className="flex flex-col justify-end h-auto relative">
-            <p className='text-[25px]'>A Developer who ⬎</p>
-            <h2 className='text-[60px] max-w-[390px] leading-[110%]'>Judges websites by their <span className='text-[#7700ff]'>loading time</span></h2>
+            <p className='text-[25px]'>{t("role")}⬎</p>
+            <h2 className='text-[60px] max-w-[390px] leading-[110%]'>{t("judges")} <span className='text-[#7700ff]'>{t("speed")}</span></h2>
             <Image 
               src="/icons/ellipse.png" 
               width={290} 
@@ -40,7 +46,7 @@ const Hero = () => {
               alt='arrow' 
               className='absolute hidden bottom-6 right-0 z-10 sm:flex '
             />
-            <p className='text-[20px] mt-3'>Because if it lags — I’m closing that tab.</p>
+            <p className='text-[20px] mt-3'>{t("closing")}</p>
 
           </div>
           </div>

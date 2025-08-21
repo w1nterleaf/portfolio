@@ -1,17 +1,23 @@
+import initTranslations from '@/app/[lng]/i18n';
 import Container from '@/components/common/Container'
 import Image from 'next/image'
 import React from 'react'
 
-const Skills = () => {
+interface Props {
+     lng: string;
+} 
+
+const Skills: React.FC<Props> = async ({ lng }) => {
+  const { t } = await initTranslations(lng, ["translation"]);
   return (
 <main id='skills'>
   <Container>
     <div className="mt-20 text-right">
       <h2 className="text-2xl sm:text-3xl md:text-[40px] flex flex-wrap justify-end gap-2">
-        But what about <span className="text-[#7700ff]">skills</span>?
+        {t("ButSkills")} <span className="text-[#7700ff]"> {t("skillspan")}</span>?
       </h2>
       <p className="text-lg sm:text-xl md:text-[30px] flex flex-wrap justify-end">
-        ⬐ Some tech I’m familiar with. My skill set always grows
+        ⬐ {t("SomeSkills")}
       </p>
 
       <div className="flex justify-center mt-10 sm:mt-20 max-w-full overflow-hidden">

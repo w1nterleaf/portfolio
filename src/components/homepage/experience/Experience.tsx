@@ -2,8 +2,13 @@ import Container from '@/components/common/Container'
 import React from 'react'
 import { experience } from '@/data/experience.data'
 import Image from 'next/image'
+import initTranslations from '@/app/[lng]/i18n';
 
-const Experience = () => {
+interface Props {
+     lng: string;
+} 
+const Experience: React.FC<Props> = async ({ lng }) => {
+    const { t } = await initTranslations(lng, ["translation"]);
   return (
     <main id='experience'>
         <Container>
@@ -21,7 +26,7 @@ const Experience = () => {
                         "
                       />
                     </div>
-                <h3 className='text-[40px] z-10 flex justify-center'>Educational Courses and Work Experience</h3>
+                <h3 className='text-[40px] z-10 flex justify-center'>{t("EduExp")}</h3>
                 <div className=" flex flex-col items-center md:flex-row md:justify-around">
                     {experience.map((el, id) => {
                         return (

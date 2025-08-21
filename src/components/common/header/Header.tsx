@@ -1,10 +1,16 @@
 import React from 'react'
 import Container from '../Container'
-import { navigation } from '@/data/header.data'
 import Link from 'next/link'
 import Image from 'next/image'
 import Burger from './Burger'
-const Header = () => {
+import { NavInterface } from '@/interfaces/NavInterface'
+
+interface Props {
+     lng: string;
+     nav: NavInterface;
+}
+
+const Header: React.FC<Props> = ({ lng, nav }) => {
   return (
     <header className='fixed z-20 w-full font-roboto bg-[#0a0a0a] p-5 '>
         <Container>
@@ -17,9 +23,9 @@ const Header = () => {
                 </div>
                 <div className="hidden md:flex">
                     <ul className='flex gap-5'>
-                        {navigation.map((el, id) => {
+                        {nav.map((el, id) => {
                             return (
-                                <Link key={id} href={el.slug} className='text-[#a7a7a7] hover:text-white duration-300'>
+                                <Link key={id} href={el.href} className='text-[#a7a7a7] hover:text-white duration-300'>
                                     {el.title}
                                 </Link>
                             )
