@@ -16,12 +16,35 @@
     "SomeSkills": "Some tech I’m familiar with. My skill set always grows",
     "Partner": "Interested in partnering with me?",
     "Open": "Open for freelance work and creative collabs. Let’s bring your ideas to life — clean code, smooth UI, real results",
+    "Galassia": "Galassia.uz — a corporate website for a local dietary supplements and vitamins manufacturer. Focused on clean design and user-friendly navigation, the site features a product catalog, brand information, and a contact form",
+    "Ledart": "Ledart.kz — a company offering sale and installation of LED screens across Kazakhstan. Website highlights consulting, product catalog, turnkey installation, and after-sales support",
+    "Agency": "A multilingual website for an international PR and marketing agency. Features include service descriptions, case studies, and dynamic contact forms, all tailored to reflect the brand’s upscale and modern aesthetic",
+
+        "portfolio": {
+        "galassia":{
+            "description": "Galassia.uz — корпоративный сайт для локального производителя БАДов и витаминов. Акцент на чистом дизайне и удобной навигации. На сайте каталог продукции, информация о бренде и форма обратной связи",
+            "Ledart": "Ledart.kz — компания, предлагающая продажу и установку LED-экранов по всему Казахстану. Сайт подчёркивает консалтинг, каталог продукции, установку под ключ и постгарантийную поддержку",
+            "Agency": "Многоязычный сайт для международного PR и маркетингового агентства. Включает описание услуг, кейсы и динамические формы обратной связи — всё в стиле современного и премиального бренда"
+        }
+    },
     
     "hero":{
         "title": "I am a Frontend Developer",
         "build": "I build interfaces...",
         "convert": "...and turn designs into code",
         "desc": "A frontend dev who blends logic with aesthetics. I design and build digital experiences that hit that one spot between user delight and business goals."
-    }
+    },
 
+    "experience": {
+        "proweb": {
+            "title": "Proweb",
+            "descr": "Educational courses for web-devs",
+            "time": "10 months (Dec. 2023 - Sep. 2024)"
+        },
+        "agency": {
+            "title": "The Agency",
+            "descr": "Marketing Agency in Uzbekistan",
+            "time": "9 months (Nov. 2024 - Jul. 2025)"
+        }
+  }
 }

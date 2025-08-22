@@ -1,18 +1,16 @@
 export const experience = [
-    {
-        id: 0,
-        title: 'Proweb',
-        descr: 'Educational courses for web-devs',
-        img: '/images/proweb.jpg',
-        time: '10 months (Dec. 2023 - Sep. 2024)',
-        slug: '/'
-    },
-    {
-        id: 1,
-        title: 'The Agency',
-        descr: 'Marketing Agency in Uzbekistan',
-        img: '/images/agency.jpg',
-        time: '9 months (Nov. 2024 - Jul. 2025)',
-        slug: '/'
-    },
-]
+  {
+    id: 0,
+    titleKey: "experience.proweb.title",
+    descrKey: "experience.proweb.descr",
+    timeKey: "experience.proweb.time",
+    img: "/images/proweb.jpg",
+  },
+  {
+    id: 1,
+    titleKey: "experience.agency.title",
+    descrKey: "experience.agency.descr",
+    timeKey: "experience.agency.time",
+    img: "/images/agency.jpg",
+  },
+];

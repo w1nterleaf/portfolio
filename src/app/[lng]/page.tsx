@@ -17,10 +17,10 @@ export default async function Home({ params }: PageProps) {
   return (
     <main>
       <Hero lng={lng} />
-      <About/>
+      <About lng={lng}/>
       <Experience lng={lng}/>
       <Skills lng={lng}/>
-      <Portfolio/>
+      <Portfolio />
       <Contacts lng={lng}/>
     </main>
   );

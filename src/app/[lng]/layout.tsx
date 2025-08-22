@@ -6,13 +6,15 @@ import initTranslations from "./i18n";
 
 interface RootLayoutProps {
      children: React.ReactNode;
-      params: { lng: string };
+     params: Promise<{
+          lng: string;
+     }>;
 }
 
 export default async function RootLayout({ children, params }: RootLayoutProps) {
-    const { lng } = params;
-    const { t } = await initTranslations(lng, ["translation"]);
-    console.log("TEST t(Home) =>", t("Home"));
+    const { lng } = await params;
+    const { t } = await initTranslations(lng, ["translation", "portfolio"]);
+
     const nav = [
     {
         id: 0,

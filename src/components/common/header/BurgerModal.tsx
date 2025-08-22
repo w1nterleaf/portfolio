@@ -5,9 +5,10 @@ import BurgerNav from './BurgerNav';
 
 interface PropTypes {
    setIsOpen: (value: boolean) => void;
+   lng: 'en' | 'ru'; 
 }
 
-const BurgerModal = ({ setIsOpen}: PropTypes) => {
+const BurgerModal = ({ setIsOpen, lng}: PropTypes) => {
 
    function closeModal() {
       setIsOpen(false);
@@ -57,7 +58,7 @@ const BurgerModal = ({ setIsOpen}: PropTypes) => {
 
          </div>
          <div className='relative mt-10 grid grid-cols-2 md:grid-cols-[1fr_1fr_19%] justify-between md:gap-[15px] md:mr-[120px]'>
-            <BurgerNav closeModal={closeModal} />
+            <BurgerNav closeModal={closeModal} lng={lng} />
             <div className='flex flex-col justify-between'>
 
                <div className={`flex items-end flex-col order-1 gap-5  md:items-start `}>
@@ -76,7 +77,7 @@ const BurgerModal = ({ setIsOpen}: PropTypes) => {
 
          </div>
          <Link href='/#contacts' className='flex  md:hidden gap-[10px] order-3 font-medium -tracking-0.02 justify-center mt-10' onClick={closeModal}>
-            Contact us
+            Contact me
             <Image src={'/icons/orange-arrow.svg'} alt='arrow' width={15} height={10} />
          </Link>
       </div>

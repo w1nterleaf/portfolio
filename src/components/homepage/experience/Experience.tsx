@@ -35,9 +35,9 @@ const Experience: React.FC<Props> = async ({ lng }) => {
                                 <Image src={el.img} alt='logo' width={8000} height={8000} className='w-full h-40 object-cover' quality={100}/>
                             </div>
                             <div className="">
-                                <p className="text-[30px] font-extrabold">{el.title}</p>
-                                <p className="text-[20px]">{el.descr}</p>
-                                <p className="text-[20px]">{el.time}</p>
+                              <p className="text-[30px] font-extrabold">{t(el.titleKey)}</p>
+                              <p className="text-[20px]">{t(el.descrKey)}</p>
+                              <p className="text-[20px]">{t(el.timeKey)}</p>
                             </div>
                             
                         </div>
